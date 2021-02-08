@@ -1,0 +1,11 @@
+{
+  "name": "js-data-structures",
+  "version": "1.0.0",
+  "description": "JS implementation of common data structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marat Sadykov",
+  "license": "ISC"
+}
