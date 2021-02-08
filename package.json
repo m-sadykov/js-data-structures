@@ -4,8 +4,12 @@
   "description": "JS implementation of common data structures",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha \"src/**/*.spec.js\""
   },
   "author": "Marat Sadykov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.2.1"
+  }
 }

@@ -9,7 +9,7 @@ function hash(string, max) {
     return hash % max;
 }
 
-class HashTable {
+export class HashTable {
     #storage = [];
     #STORAGE_LIMIT = 4;
 

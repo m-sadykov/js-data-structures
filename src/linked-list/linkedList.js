@@ -2,7 +2,7 @@
  * Node of a linked list
  */
 
-class ListNode {
+export class ListNode {
     constructor(element, next = null) {
         this.element = element;
         this.next = next;
@@ -14,7 +14,7 @@ class ListNode {
  * Nodes consist of: data of the node and next which is the pointer to the next node.
  * Requires to read through all nodes in list to get specific element.
  */
-class LinkedList {
+export class LinkedList {
     #length = 0;
     #head = null;
 

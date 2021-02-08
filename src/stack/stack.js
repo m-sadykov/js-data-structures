@@ -49,17 +49,4 @@ class Stack {
     }
 }
 
-// const stack = new Stack();
-
-// stack.push(1);
-// stack.push(2);
-// stack.push(3);
-// stack.push(4);
-// stack.push(5);
-
-// const removedEl = stack.pop();
-// const topEl = stack.peek();
-
-// console.log(`removed element: ${removedEl}`)
-// console.log(`top element of Stack: ${topEl}`);
-// console.log(`size: ${stack.size()}`);
+module.exports = Stack;

@@ -4,7 +4,7 @@
  * Here an array is used for simplicity
  */
 
-class Queue {
+export class Queue {
     #collection;
 
     constructor(collection = []) {
