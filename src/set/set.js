@@ -2,7 +2,7 @@
  * The Set object lets you store unique values of any type, whether primitive values or object references.
  */
 
-export class MySet {
+class MySet {
     #collection;
 
     constructor(collection = []) {
@@ -119,20 +119,4 @@ export class MySet {
     }
 }
 
-// const set = new MySet();
-// const otherSet = new MySet([3, 4, 5]);
-// const differSet = new MySet([2, 1, 4, 6])
-
-// set.add(1);
-// set.add(2);
-// set.add(3);
-
-// // set.delete(2);
-
-// const unionSet = set.union(otherSet);
-// const differenceSet = set.difference(differSet);
-
-// console.log(`values: ${set.values()}`)
-// console.log(`other set values: ${otherSet.values()}`)
-// console.log(`union set values: ${unionSet.values()}`)
-// console.log(`difference set values: ${differenceSet.values()}`)
+module.exports = MySet;

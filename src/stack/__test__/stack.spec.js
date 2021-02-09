@@ -1,7 +1,7 @@
 const Stack = require('../stack');
 const expect = require('chai').expect;
 
-describe('Stack', () => {
+describe('Stack:', () => {
     let stack = new Stack();
     
     describe('push', () => {
