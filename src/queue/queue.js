@@ -4,7 +4,7 @@
  * Here an array is used for simplicity
  */
 
-export class Queue {
+class Queue {
     #collection;
 
     constructor(collection = []) {
@@ -56,18 +56,4 @@ export class Queue {
     }
 }
 
-// const queue = new Queue();
-
-// const frontEl = queue.front();
-// console.log(frontEl)
-
-// queue.enqueue("one");
-// queue.enqueue("two");
-// queue.enqueue("three");
-
-// const removedFrontEl = queue.dequeue();
-
-// console.log(removedFrontEl);
-// console.log(queue.front())
-
-// console.log(queue.size());
+module.exports = Queue;
