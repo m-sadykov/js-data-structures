@@ -2,7 +2,7 @@
  * Node of a linked list
  */
 
-export class ListNode {
+class ListNode {
     constructor(element, next = null) {
         this.element = element;
         this.next = next;
@@ -14,7 +14,7 @@ export class ListNode {
  * Nodes consist of: data of the node and next which is the pointer to the next node.
  * Requires to read through all nodes in list to get specific element.
  */
-export class LinkedList {
+class LinkedList {
     #length = 0;
     #head = null;
 
@@ -52,7 +52,6 @@ export class LinkedList {
 
             currentNode.next = node;
         }
-
         this.#length++;
     }
 
@@ -76,6 +75,7 @@ export class LinkedList {
         }
 
         this.#length--;
+        return currentNode.element;
     }
 
     /**
@@ -175,15 +175,4 @@ export class LinkedList {
     }
 }
 
-const list = new LinkedList();
-
-list.add(1);
-list.add(2);
-list.add(3);
-list.add(4);
-
-list.addAt(1, 5)
-
-console.log(list.head())
-console.log(`indexOf 5: `, list.indexOf(5))
-console.log(list.size())
+module.exports = LinkedList;

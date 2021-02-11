@@ -7,3 +7,10 @@
    - Linked List
    - Set
    - Hash Table
+   - Tree
+
+# Testing
+
+``` bash 
+  npm run test
+```

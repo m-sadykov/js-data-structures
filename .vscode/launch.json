@@ -7,11 +7,25 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Current JS File",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${file}",
+            "outputCapture": "std"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Test",
+            "args": [
+                "${file}"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            // "console": "internalConsole",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/mocha",
             "outputCapture": "std"
         }
     ]
