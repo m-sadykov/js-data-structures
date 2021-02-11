@@ -9,7 +9,7 @@ function hash(string, max) {
     return hash % max;
 }
 
-export class HashTable {
+class HashTable {
     #storage = [];
     #STORAGE_LIMIT = 4;
 
@@ -78,13 +78,4 @@ export class HashTable {
     }
 }
 
-// let hashT = new HashTable();
-
-// hashT.add("1", "one");
-// hashT.add("2", "two");
-// hashT.add("3", "three");
-// hashT.add("4", "four");
-
-// hashT.remove("3")
-
-// console.log(hashT.lookup("4"))
+module.exports = HashTable;
