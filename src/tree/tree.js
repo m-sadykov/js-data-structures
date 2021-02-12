@@ -146,21 +146,3 @@ class BST {
 }
 
 module.exports = BST;
-
-// let tree = new BST();
-
-// tree.add(4);
-// tree.add(2);
-// tree.add(6);
-// tree.add(1);
-// tree.add(3);
-// tree.add(5);
-// tree.add(7);
-
-// console.log(tree)
-// console.log(`min node: ${tree.findMin()}`);
-// console.log(`max node: ${tree.findMax()}`);
-
-// tree.remove(3);
-
-// console.log(tree.isPresent(3))

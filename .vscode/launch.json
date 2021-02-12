@@ -19,14 +19,14 @@
             "request": "launch",
             "name": "Test",
             "args": [
-                "${file}"
+                "${file}",
+                // "-p"
             ],
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            // "console": "internalConsole",
+            "console": "internalConsole",
             "program": "${workspaceFolder}/node_modules/mocha/bin/mocha",
-            "outputCapture": "std"
         }
     ]
 }
