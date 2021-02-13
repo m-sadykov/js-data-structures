@@ -1,4 +1,4 @@
-const BST = require('../tree');
+const BST = require('../binarySearchTree');
 const expect = require('chai').expect;
 
 describe('Binary Search Tree:', () => {

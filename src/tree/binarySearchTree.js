@@ -1,7 +1,7 @@
 /**
  * Tree Node
  */
-class TreeNode {
+class BSTreeNode {
     data;
     left;
     right;
@@ -31,14 +31,14 @@ class BST {
         const currentNode = this.root;
 
         if (!currentNode) {
-            this.root = new TreeNode(data);
+            this.root = new BSTreeNode(data);
             return;
         } else {
             const searchTree = function (node) {
                 if (data < node.data) {
-                    return !node.left ? node.left = new TreeNode(data) : searchTree(node.left);
+                    return !node.left ? node.left = new BSTreeNode(data) : searchTree(node.left);
                 } else if (data > node.data) {
-                    return !node.right ? node.right = new TreeNode(data) : searchTree(node.right);
+                    return !node.right ? node.right = new BSTreeNode(data) : searchTree(node.right);
                 } else {
                     return;
                 }
@@ -79,7 +79,7 @@ class BST {
     /**
      * @description search a specific node
      * @param {*} data
-     * @returns {TreeNode} node
+     * @returns {BSTreeNode} node
      */
     find(data) {
         let currentNode = this.root;
